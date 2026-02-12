@@ -1,91 +1,70 @@
-# LegalMemory™ – AI Legal Memory & Document Intelligence Platform
-## Premium SaaS for Law Firms' Institutional Knowledge Automation
+# LegalMemory.com – Premium AI Domain for Legal Tech, Compliance, and Knowledge Automation Platforms
 
----
+**One-Page Positioning Statement**
 
-## MARKET OPPORTUNITY
-The legal industry has reached an inflection point: **78% of law firms now deploy AI tools** (per VALE Market Validation Report), yet they lack integrated AI systems that synthesize institutional memory, case intelligence, and compliance archives. LegalMemory™ captures this white space—positioning as the **semantic memory layer** that transforms how law firms leverage historical case data, precedents, and compliance frameworks in real-time.
+LegalMemory.com is the commercial front door for the **Legal Memory & Document Intelligence Platform** being developed in the [`legal-memory` GitHub repository](https://github.com/AgentFamily/legal-memory). This is not a domain-only branding play. It is a category-defining SaaS asset for law firms that need to convert fragmented legal data into repeatable case outcomes, audit-ready compliance, and durable institutional knowledge.
 
----
+## Why This Wins Now
 
-## SOLUTION POSITIONING
+The VALE Market Validation Feasibility Report (2025-2026) shows a market inflection point:
 
-### **1. AI Case Memory System**
-- Neural case library indexing past litigation outcomes, settlements, and legal strategies
-- Instant cross-case pattern recognition to surface winning analogues, predict opposing counsel tactics, and identify emerging case law applications
-- Reduces discovery time by 60%+ through semantic similarity matching
+- **78% of law firms already use AI**
+- **52% report ROI within 12 months**
+- **68% plan to increase AI spend**
+- **Only 12% have institutional memory systems**
 
-### **2. Legal Document Recall + Compliance Archive**
-- Centralized document intelligence repository with context-aware retrieval
-- Automated compliance gap detection against ROC, SEC, GDPR, and industry standards
-- Track regulatory changes and automatically flag affected contracts and policies in seconds
-- Eliminates manual compliance audit labor
+That gap is the opportunity. Legal AI has been adopted, but legal knowledge infrastructure is still missing. LegalMemory.com anchors a platform built specifically to fill that infrastructure layer.
 
-### **3. Litigation Intelligence Layer**
-- Opponent case history synthesis with win/loss prediction models
-- Judge profile analytics tied to ruling patterns across practice areas
-- Precedent depth analysis: surface the "best version" of a legal argument relevant to this exact case
-- Competitive intelligence dashboard for legal strategy teams
+## Product Positioning: Four Revenue-Critical Pillars
 
-### **4. AI-Powered Institutional Knowledge Engine**
-- Preserves senior partner expertise as queryable AI models
-- Onboards associates faster with searchable institutional playbooks
-- Reduces institutional knowledge loss from partner departures
-- Transform unstructured case files, memos, and depositions into structured, AI-searchable assets
+1. **AI Case Memory System for Law Firms**
+Transforms past matters, briefs, motions, and outcomes into a searchable memory graph. Attorneys retrieve precedent-like internal intelligence in seconds, not days.
 
----
+2. **Legal Document Recall + Compliance Archive**
+Creates a central, retrieval-native archive for contracts, policies, discovery, and matter files with traceability for SEC/GDPR/ABA-oriented controls and audit workflows.
 
-## SAAS REVENUE MODEL
+3. **Litigation Intelligence Layer**
+Adds opponent patterns, judge tendencies, strategy retrieval, and argument depth scoring to support faster litigation planning and more consistent trial prep.
 
-| Tier | Target | Value | Price Range |
-|------|--------|-------|-------------|
-| **Starter** | Solo & Small Practices | 50M doc limit, basic recall | $2K–5K/mo |
-| **Professional** | Mid-size Firms (50–200 atty) | Unlimited docs, litigation intel | $8K–15K/mo |
-| **Enterprise** | BigLaw (200+ atty) | Custom integration, AI fine-tuning, API access | $25K–50K/mo |
+4. **AI-Powered Institutional Knowledge Engine**
+Captures partner and practice-group know-how before attrition events, then turns it into reusable playbooks for associates, lateral hires, and cross-office teams.
 
-**Expansion Revenue:** Compliance module add-on (+$3K/mo), Expert AI coaching (+$5K/mo), Deploy-on-premise licensing.
+## SaaS Thesis: What Buyers Actually Purchase
 
----
+LegalMemory.com signals a **platform subscription**, not a one-off software license. The buyer receives measurable operational outcomes:
 
-## COMPETITIVE ADVANTAGES
+- Faster case preparation and legal research cycles
+- Higher realization on fixed-fee and capped-fee matters
+- Lower knowledge-loss risk from partner transitions
+- Reduced compliance review friction and audit exposure
 
-✓ **Legal-First AI:** Purpose-built for law firms, not generic enterprise search  
-✓ **Regulatory-Aware:** Compliance scoring built into every feature  
-✓ **Precedent Intelligence:** Proprietary legal reasoning engine vs. ChatGPT plugins  
-✓ **Knowledge Preservation:** Captures institutional expertise before it walks out the door  
-✓ **Multi-Year ROI:** Reduces litigation prep time by 40–60%, compliance review by 70%
+### Packaging Model
 
----
+- **Starter:** Small firms, core recall and archive workflows
+- **Professional:** Mid-market firms, litigation intelligence + compliance automations
+- **Enterprise:** Large firms, advanced integrations, governance controls, API access
 
-## MARKET TRACTION DRIVERS
+### Expansion Model
 
-1. **Regulatory Pressure:** AI Transparency and LLM Audit requirements drive demand for traceable, compliance-grade AI knowledge systems
-2. **Partnership Economics:** Law firms want AI they *own* to maintain competitive advantage—not relying on OpenAI's commodity models
-3. **Talent Retention:** Knowledge transfer and junior attorney onboarding reduce partner churn and recruitment costs
-4. **Billing Optimization:** Faster research cycles mean better margins on fixed-fee engagements and improved realization rates
+- Compliance modules
+- Practice-area intelligence packs
+- Integration and workflow automation services
 
----
+This supports recurring revenue, predictable expansion ARR, and defensible retention through data network effects inside each firm.
 
-## THE DOMAIN ADVANTAGE
+## Strategic Domain Value
 
-**LegalMemory.com** is a premium, AI-forward domain that positions immediately as:
-- **Credible:** Clear legal + AI association
-- **Memorable:** Sticky brand for law firm buyers and investors
-- **SaaS-Native:** Suggests modern cloud infrastructure vs. legacy databases
-- **Defensible:** Category-defining for "AI memory" in legal tech
+LegalMemory.com immediately communicates:
 
----
+- **Category clarity:** Legal + memory + AI in one name
+- **Buyer trust:** Enterprise-credible versus generic AI branding
+- **Go-to-market efficiency:** Shorter explanation cycle in partner/CLO sales conversations
+- **Asset defensibility:** Ownable term in an emerging legal AI category
 
-## CALL TO ACTION FOR INVESTORS & BUYERS
+## Positioning Statement for Investors, Acquirers, and Buyers
 
-LegalMemory™ is not a case management tool. It is the **institutional memory operating system** that turns unstructured legal history into real-time institutional advantage. With 78% of law firms already adopting AI, the question is not *if* they need memory systems—it's *who they'll buy it from*.
+**LegalMemory.com is the premium domain and product identity for a Legal Memory & Document Intelligence SaaS platform built for law firms operating in the post-adoption AI era.**  
+With 78% of firms already using AI, the next budget shift is toward systems that preserve institutional knowledge, automate compliance archives, and create litigation intelligence at scale.  
+LegalMemory is positioned to become that system of record.
 
-**The buyer sees:** Reduced case prep time, preserved institutional knowledge, automated compliance, and a plug-and-play competitive edge.
-
-**The business sees:** $15K ARR per firm × 500 target accounts = $7.5M ARR, with enterprise upsell to $40K+ annually.
-
----
-
-**Project Launch:** Q1 2026  
-**MVP Target:** Litigation Intelligence + Document Recall (minimum viable AI memory)  
-**Go-to-Market:** Direct sales to managing partners & chief legal officers at 100–500 attorney firms
+**Bottom line:** this is a SaaS platform category play with strong commercialization logic, not a branding-only domain.
