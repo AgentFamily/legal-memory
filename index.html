@@ -87,6 +87,27 @@
       max-width: 60ch;
     }
 
+    .icon-strip {
+      margin-top: 0.2rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.38rem;
+    }
+
+    .chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.3rem;
+      padding: 0.26rem 0.5rem;
+      border-radius: 999px;
+      border: 1px solid var(--line);
+      background: #fff;
+      color: var(--muted);
+      font-size: 0.72rem;
+      line-height: 1;
+      white-space: nowrap;
+    }
+
     .stats {
       display: grid;
       grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -189,7 +210,7 @@
       background: #fff;
       border: 1px solid var(--line);
       border-radius: 999px;
-      padding: 0.42rem 0.62rem;
+      padding: 0.5rem 0.72rem;
       font-size: 0.76rem;
       font-weight: 600;
     }
@@ -208,6 +229,9 @@
       .stats { grid-template-columns: 1fr; }
       .cards { grid-template-columns: 1fr; }
       main { width: min(980px, calc(100% - 0.8rem)); }
+      .links .btn { flex: 1 1 auto; text-align: center; }
+      .icon-strip { gap: 0.34rem; }
+      .chip { font-size: 0.7rem; }
     }
   </style>
 </head>
@@ -217,6 +241,13 @@
       <div class="tag">AI legal automation</div>
       <h1>Less manual legal work. Faster client delivery.</h1>
       <p>LegalMemory.com positions your product as a clear SaaS platform for legal workflows, compliance, and knowledge automation.</p>
+      <div class="icon-strip" aria-label="Platform highlights">
+        <span class="chip">⚖️ Legal ops</span>
+        <span class="chip">🤖 AI workflows</span>
+        <span class="chip">🔒 Compliance</span>
+        <span class="chip">👮‍♀️ Audit-ready</span>
+        <span class="chip">📄 Smart docs</span>
+      </div>
       <div class="stats">
         <article class="stat">
           <strong>78%</strong>
@@ -264,24 +295,39 @@
           <h3>Client Update Copilot</h3>
           <p>Create clear client updates from live matter data.</p>
         </article>
+        <article class="card">
+          <div class="icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M12 3l8 4v5c0 5-3.5 7.5-8 9-4.5-1.5-8-4-8-9V7z"/><path d="M9 12l2 2 4-4"/></svg>
+          </div>
+          <h3>Compliance Archive</h3>
+          <p>Auto-store policy and matter records with traceability.</p>
+        </article>
+        <article class="card">
+          <div class="icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M6 3h12v18l-6-3-6 3z"/><path d="M9 8h6M9 12h6"/></svg>
+          </div>
+          <h3>Precedent Recall</h3>
+          <p>Pull similar past arguments and winning internal playbooks.</p>
+        </article>
       </div>
     </section>
 
     <section class="panel">
       <h2 class="section-title">Why legal buyers care</h2>
       <ul class="list">
-        <li>Faster turnaround for client requests</li>
-        <li>Consistent quality across legal teams</li>
-        <li>Lower cost on fixed-fee matters</li>
+        <li>⚡ Faster turnaround for client requests</li>
+        <li>👮‍♀️ Compliance-ready delivery standards</li>
+        <li>📉 Lower cost on fixed-fee matters</li>
       </ul>
       <div class="links">
+        <a class="btn" href="https://ai-realtor.co.uk" target="_blank" rel="noreferrer">Contact: Ai-Realtor.co.uk</a>
         <a class="btn" href="https://github.com/AgentFamily/legal-memory" target="_blank" rel="noreferrer">GitHub</a>
         <a class="btn" href="https://github.com/AgentFamily/legal-memory/blob/main/POSITIONING_STATEMENT.md" target="_blank" rel="noreferrer">Positioning</a>
         <a class="btn" href="https://github.com/AgentFamily/legal-memory/blob/main/docs/research/VALE_findings.md" target="_blank" rel="noreferrer">VALE</a>
       </div>
       <div class="footer">
         <span>LegalMemory.com | Premium AI Legal Automation Domain</span>
-        <span>Vercel-ready static site</span>
+        <span>Contact: Ai-Realtor.co.uk</span>
       </div>
     </section>
   </main>
