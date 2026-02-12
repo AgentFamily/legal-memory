@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LegalMemory.com | AI Legal Memory and Document Intelligence</title>
+  <meta
+    name="description"
+    content="LegalMemory.com is a premium AI domain and SaaS positioning asset for legal tech, compliance archives, litigation intelligence, and institutional knowledge automation."
+  >
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-1: #f4efe7;
+      --bg-2: #efe5d8;
+      --ink: #1d2426;
+      --ink-soft: #455154;
+      --card: rgba(255, 255, 255, 0.86);
+      --line: rgba(27, 34, 36, 0.12);
+      --accent: #0d7a68;
+      --accent-soft: #e6f6f2;
+      --warn: #ac5b00;
+      --warn-soft: #fff3e6;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: "Space Grotesk", system-ui, sans-serif;
+      color: var(--ink);
+      background:
+        radial-gradient(1200px 800px at 88% -10%, #d8eee8 0%, transparent 55%),
+        radial-gradient(900px 700px at -5% 10%, #f9dfbf 0%, transparent 52%),
+        linear-gradient(160deg, var(--bg-1), var(--bg-2));
+    }
+
+    .shell {
+      width: min(1120px, calc(100% - 2.5rem));
+      margin: 2rem auto 3rem;
+    }
+
+    .hero {
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      overflow: hidden;
+      background: linear-gradient(130deg, rgba(255, 255, 255, 0.93), rgba(244, 255, 251, 0.75));
+      box-shadow: 0 20px 50px rgba(17, 24, 26, 0.08);
+      animation: rise 680ms ease-out;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.4fr 1fr;
+      gap: 1.4rem;
+      padding: 2rem;
+    }
+
+    .tag {
+      display: inline-flex;
+      gap: 0.45rem;
+      align-items: center;
+      border: 1px solid rgba(13, 122, 104, 0.28);
+      background: var(--accent-soft);
+      color: #04584c;
+      border-radius: 999px;
+      padding: 0.35rem 0.8rem;
+      font-size: 0.84rem;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+    }
+
+    h1 {
+      font-family: "Fraunces", Georgia, serif;
+      font-size: clamp(1.95rem, 3.7vw, 3.2rem);
+      line-height: 1.05;
+      margin: 0.9rem 0 0.7rem;
+      letter-spacing: -0.02em;
+    }
+
+    .lead {
+      color: var(--ink-soft);
+      font-size: 1.05rem;
+      line-height: 1.52;
+      margin: 0;
+      max-width: 54ch;
+    }
+
+    .panel {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      padding: 1rem;
+      backdrop-filter: blur(8px);
+    }
+
+    .stat-grid {
+      display: grid;
+      gap: 0.65rem;
+    }
+
+    .stat {
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      background: #fff;
+      padding: 0.8rem 0.9rem;
+    }
+
+    .stat strong {
+      display: block;
+      font-size: 1.35rem;
+      line-height: 1;
+    }
+
+    .stat span {
+      display: block;
+      color: var(--ink-soft);
+      font-size: 0.89rem;
+      margin-top: 0.25rem;
+    }
+
+    .section {
+      margin-top: 1.1rem;
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      background: rgba(255, 255, 255, 0.84);
+      box-shadow: 0 16px 42px rgba(17, 24, 26, 0.07);
+      padding: 1.5rem;
+      animation: rise 760ms ease-out;
+    }
+
+    .section h2 {
+      font-family: "Fraunces", Georgia, serif;
+      margin: 0 0 0.35rem;
+      font-size: clamp(1.34rem, 2.4vw, 2rem);
+      letter-spacing: -0.01em;
+    }
+
+    .section p {
+      margin: 0;
+      color: var(--ink-soft);
+      line-height: 1.5;
+    }
+
+    .pillars {
+      margin-top: 1rem;
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 0.8rem;
+    }
+
+    .pillar {
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 0.95rem;
+      background: rgba(255, 255, 255, 0.92);
+      transition: transform 160ms ease, border-color 160ms ease, box-shadow 160ms ease;
+    }
+
+    .pillar:hover {
+      transform: translateY(-2px);
+      border-color: rgba(13, 122, 104, 0.32);
+      box-shadow: 0 9px 22px rgba(11, 30, 28, 0.08);
+    }
+
+    .pillar h3 {
+      margin: 0 0 0.4rem;
+      font-size: 1.01rem;
+    }
+
+    .pillar p {
+      font-size: 0.95rem;
+    }
+
+    .model {
+      margin-top: 1rem;
+      overflow: auto;
+      border-radius: 14px;
+      border: 1px solid var(--line);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: #fff;
+      min-width: 700px;
+    }
+
+    th, td {
+      text-align: left;
+      padding: 0.8rem;
+      border-bottom: 1px solid rgba(27, 34, 36, 0.1);
+      font-size: 0.92rem;
+      vertical-align: top;
+    }
+
+    th {
+      font-size: 0.8rem;
+      color: #556164;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      background: #f8fbfa;
+    }
+
+    .notes {
+      margin-top: 0.95rem;
+      display: grid;
+      gap: 0.55rem;
+    }
+
+    .note {
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      background: #fff;
+      padding: 0.72rem 0.85rem;
+      font-size: 0.92rem;
+    }
+
+    .quote {
+      margin-top: 1rem;
+      border-radius: 14px;
+      border: 1px solid rgba(172, 91, 0, 0.24);
+      background: var(--warn-soft);
+      padding: 0.92rem;
+      color: #683600;
+      line-height: 1.48;
+      font-size: 0.95rem;
+    }
+
+    .links {
+      margin-top: 1rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+    }
+
+    a.btn {
+      text-decoration: none;
+      border-radius: 999px;
+      border: 1px solid var(--line);
+      background: #fff;
+      color: var(--ink);
+      padding: 0.55rem 0.84rem;
+      font-size: 0.86rem;
+      font-weight: 600;
+      transition: transform 120ms ease, border-color 120ms ease, background 120ms ease;
+    }
+
+    a.btn:hover {
+      transform: translateY(-1px);
+      border-color: rgba(13, 122, 104, 0.4);
+      background: #f7fffd;
+    }
+
+    footer {
+      margin-top: 1rem;
+      text-align: center;
+      font-size: 0.83rem;
+      color: #6c787b;
+    }
+
+    @keyframes rise {
+      from {
+        opacity: 0;
+        transform: translateY(10px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (max-width: 910px) {
+      .hero-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .pillars {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 620px) {
+      .shell {
+        width: min(1120px, calc(100% - 1rem));
+        margin-top: 1rem;
+      }
+
+      .hero-grid,
+      .section {
+        padding: 1rem;
+      }
+
+      .lead {
+        font-size: 0.99rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="shell">
+    <header class="hero">
+      <div class="hero-grid">
+        <section>
+          <div class="tag">Market Signal: 78% legal AI adoption</div>
+          <h1>LegalMemory.com is a premium SaaS positioning asset, not just a domain.</h1>
+          <p class="lead">
+            Built for law firms moving beyond basic AI tools, LegalMemory.com anchors a
+            Legal Memory and Document Intelligence Platform that connects case history,
+            compliance archives, litigation workflows, and institutional expertise in one
+            defensible system.
+          </p>
+        </section>
+        <aside class="panel">
+          <div class="stat-grid">
+            <article class="stat">
+              <strong>78%</strong>
+              <span>Law firms already use AI tools</span>
+            </article>
+            <article class="stat">
+              <strong>52%</strong>
+              <span>Report ROI within 12 months</span>
+            </article>
+            <article class="stat">
+              <strong>68%</strong>
+              <span>Plan increased AI spend</span>
+            </article>
+            <article class="stat">
+              <strong>12%</strong>
+              <span>Have institutional memory systems</span>
+            </article>
+          </div>
+        </aside>
+      </div>
+    </header>
+
+    <section class="section">
+      <h2>Four product pillars buyers can evaluate fast</h2>
+      <p>
+        The platform is positioned to solve legal memory, compliance, and litigation intelligence at the same time.
+      </p>
+      <div class="pillars">
+        <article class="pillar">
+          <h3>AI Case Memory System for Law Firms</h3>
+          <p>Convert historical matters and legal outcomes into searchable internal intelligence for repeatable strategies.</p>
+        </article>
+        <article class="pillar">
+          <h3>Legal Document Recall + Compliance Archive</h3>
+          <p>Centralize contracts, discovery files, and policies in a retrieval-native archive with audit-friendly traceability.</p>
+        </article>
+        <article class="pillar">
+          <h3>Litigation Intelligence Layer</h3>
+          <p>Surface opponent patterns, judge tendencies, and argument depth signals to speed strategy development.</p>
+        </article>
+        <article class="pillar">
+          <h3>AI-Powered Institutional Knowledge Engine</h3>
+          <p>Capture partner-level expertise and turn it into reusable playbooks for associates and cross-office teams.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>SaaS model and expansion logic</h2>
+      <p>The commercial thesis is recurring subscription with module-based expansion, not one-time license revenue.</p>
+      <div class="model">
+        <table>
+          <thead>
+            <tr>
+              <th>Tier</th>
+              <th>Target</th>
+              <th>Core Value</th>
+              <th>Monthly Price</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Starter</td>
+              <td>Small firms</td>
+              <td>Case recall + archive baseline</td>
+              <td>$2K-$5K</td>
+            </tr>
+            <tr>
+              <td>Professional</td>
+              <td>Mid-market firms</td>
+              <td>Recall + litigation intelligence + compliance automation</td>
+              <td>$8K-$15K</td>
+            </tr>
+            <tr>
+              <td>Enterprise</td>
+              <td>Large firms</td>
+              <td>Governance controls, integrations, and API access</td>
+              <td>$25K-$50K</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="notes">
+        <div class="note">Expansion: Compliance modules and practice-area intelligence packs.</div>
+        <div class="note">Retention moat: Institutional data network effects inside each firm.</div>
+        <div class="note">Buyer payoff: Faster case prep, reduced knowledge loss, and lower audit friction.</div>
+      </div>
+      <div class="quote">
+        Positioning line: LegalMemory.com is the premium domain and SaaS identity for legal organizations moving from basic AI usage to institutional, compliance-ready, litigation-grade knowledge automation.
+      </div>
+      <div class="links">
+        <a class="btn" href="https://github.com/AgentFamily/legal-memory/blob/main/POSITIONING_STATEMENT.md">One-Page Positioning</a>
+        <a class="btn" href="https://github.com/AgentFamily/legal-memory/blob/main/README.md">Repository Overview</a>
+        <a class="btn" href="https://github.com/AgentFamily/legal-memory/blob/main/docs/research/VALE_findings.md">VALE Findings</a>
+        <a class="btn" href="https://github.com/AgentFamily/legal-memory/blob/main/docs/research/legal_ai_adoption_trends.md">AI Adoption Trends</a>
+        <a class="btn" href="https://github.com/AgentFamily/legal-memory/blob/main/docs/compliance/regulatory_framework.md">Regulatory Framework</a>
+      </div>
+    </section>
+
+    <footer>
+      LegalMemory.com | AI Legal Memory and Document Intelligence Platform
+    </footer>
+  </main>
+</body>
+</html>
