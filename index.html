@@ -3,32 +3,27 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>LegalMemory.com | AI Legal Memory and Document Intelligence Platform</title>
-  <meta name="description" content="LegalMemory.com is a premium SaaS domain and platform positioning for legal memory automation, compliance archives, litigation intelligence, and institutional knowledge systems.">
-  <meta name="theme-color" content="#0f4f46">
+  <title>LegalMemory.com | AI Legal Automations for Law Firms</title>
+  <meta name="description" content="LegalMemory.com is a premium SaaS positioning asset for AI legal automations: case memory, compliance archive, litigation intelligence, and client-facing legal workflows.">
+  <meta name="theme-color" content="#0c5a4e">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Literata:opsz,wght@7..72,600;7..72,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;700&family=Spectral:wght@600;700&display=swap" rel="stylesheet">
   <style>
     :root {
-      --bg-start: #f5efe4;
-      --bg-end: #ecf3ef;
-      --ink-900: #172426;
-      --ink-700: #3e4f53;
-      --ink-500: #617378;
-      --line: rgba(24, 38, 40, 0.12);
-      --line-strong: rgba(24, 38, 40, 0.2);
-      --surface: rgba(255, 255, 255, 0.86);
-      --surface-strong: rgba(255, 255, 255, 0.96);
-      --brand: #0f4f46;
-      --brand-soft: #e7f4f1;
-      --signal: #925100;
-      --signal-soft: #fff4e8;
-      --radius-xl: 24px;
-      --radius-lg: 16px;
-      --radius-md: 12px;
-      --shadow-lg: 0 24px 56px rgba(14, 24, 25, 0.08);
-      --shadow-md: 0 14px 30px rgba(14, 24, 25, 0.06);
+      --bg-1: #f8f2e9;
+      --bg-2: #e8f2ee;
+      --ink: #142325;
+      --ink-soft: #46595d;
+      --line: rgba(20, 35, 37, 0.14);
+      --card: rgba(255, 255, 255, 0.9);
+      --brand: #0c5a4e;
+      --brand-soft: #e3f5f1;
+      --alert: #915600;
+      --alert-soft: #fff2e1;
+      --radius-lg: 20px;
+      --radius-md: 14px;
+      --shadow: 0 18px 45px rgba(16, 28, 30, 0.08);
     }
 
     * {
@@ -37,220 +32,204 @@
 
     body {
       margin: 0;
-      color: var(--ink-900);
-      font-family: "DM Sans", system-ui, sans-serif;
-      background:
-        radial-gradient(1000px 520px at 92% -8%, #d9ebe5 0%, rgba(217, 235, 229, 0) 60%),
-        radial-gradient(820px 460px at -8% 12%, #f8dfba 0%, rgba(248, 223, 186, 0) 58%),
-        linear-gradient(156deg, var(--bg-start), var(--bg-end));
-      line-height: 1.45;
       min-height: 100vh;
-    }
-
-    .noise {
-      position: fixed;
-      inset: 0;
-      pointer-events: none;
-      opacity: 0.22;
-      background-image: radial-gradient(rgba(17, 31, 33, 0.08) 0.45px, transparent 0.45px);
-      background-size: 3px 3px;
-      mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0));
-      z-index: 0;
+      font-family: "Sora", system-ui, sans-serif;
+      color: var(--ink);
+      background:
+        radial-gradient(900px 520px at 90% -10%, #d5ebe3 0%, transparent 62%),
+        radial-gradient(800px 460px at -5% 12%, #f9ddbc 0%, transparent 60%),
+        linear-gradient(155deg, var(--bg-1), var(--bg-2));
     }
 
     main {
-      position: relative;
-      z-index: 1;
-      width: min(1140px, calc(100% - 2.4rem));
-      margin: 1.7rem auto 2.6rem;
+      width: min(1080px, calc(100% - 2rem));
+      margin: 1.5rem auto 2rem;
       display: grid;
       gap: 1rem;
     }
 
-    .panel {
+    .card {
       border: 1px solid var(--line);
-      border-radius: var(--radius-xl);
-      background: var(--surface);
-      box-shadow: var(--shadow-md);
+      border-radius: var(--radius-lg);
+      background: var(--card);
+      box-shadow: var(--shadow);
       backdrop-filter: blur(8px);
       overflow: hidden;
+      animation: reveal 620ms ease both;
     }
 
     .hero {
+      padding: 1.5rem;
       display: grid;
-      grid-template-columns: 1.5fr 1fr;
+      grid-template-columns: 1.45fr 1fr;
       gap: 1rem;
-      padding: 1.9rem;
-      background:
-        linear-gradient(140deg, rgba(255, 255, 255, 0.94), rgba(234, 246, 243, 0.8));
-      animation: rise 620ms ease-out both;
+      background: linear-gradient(132deg, rgba(255, 255, 255, 0.95), rgba(232, 246, 242, 0.82));
     }
 
-    .badge {
+    .tag {
       display: inline-flex;
       align-items: center;
-      gap: 0.44rem;
-      border: 1px solid rgba(15, 79, 70, 0.36);
+      gap: 0.4rem;
+      padding: 0.34rem 0.72rem;
+      border: 1px solid rgba(12, 90, 78, 0.35);
       border-radius: 999px;
-      padding: 0.32rem 0.76rem;
       background: var(--brand-soft);
-      color: #0e5a50;
-      font-size: 0.8rem;
+      color: var(--brand);
+      font-size: 0.76rem;
       font-weight: 700;
-      letter-spacing: 0.03em;
+      letter-spacing: 0.04em;
       text-transform: uppercase;
     }
 
     h1 {
-      margin: 0.86rem 0 0.68rem;
-      font-family: "Literata", Georgia, serif;
+      margin: 0.75rem 0 0.55rem;
+      font-family: "Spectral", Georgia, serif;
+      line-height: 1.04;
       letter-spacing: -0.02em;
-      line-height: 1.05;
-      font-size: clamp(2rem, 3.9vw, 3.45rem);
-      max-width: 18ch;
+      font-size: clamp(1.95rem, 4.2vw, 3.2rem);
+      max-width: 17ch;
     }
 
     .hero p {
       margin: 0;
-      color: var(--ink-700);
-      max-width: 58ch;
-      font-size: 1.02rem;
+      color: var(--ink-soft);
+      font-size: 0.97rem;
+      max-width: 55ch;
     }
 
-    .signal-card {
+    .actions {
+      margin-top: 0.95rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.55rem;
+    }
+
+    .btn {
       border: 1px solid var(--line);
-      border-radius: var(--radius-lg);
-      padding: 0.85rem;
-      background: var(--surface-strong);
-      display: grid;
-      gap: 0.6rem;
+      border-radius: 999px;
+      padding: 0.48rem 0.74rem;
+      text-decoration: none;
+      color: var(--ink);
+      background: #fff;
+      font-size: 0.82rem;
+      font-weight: 600;
+      transition: transform 130ms ease, border-color 130ms ease, background 130ms ease;
     }
 
-    .signal-title {
-      font-size: 0.78rem;
-      letter-spacing: 0.07em;
-      text-transform: uppercase;
-      color: var(--ink-500);
-      font-weight: 700;
-      margin: 0;
+    .btn:hover {
+      transform: translateY(-1px);
+      border-color: rgba(12, 90, 78, 0.45);
+      background: #f5fffc;
     }
 
-    .stats {
+    .metrics {
       display: grid;
       gap: 0.5rem;
+      align-content: start;
     }
 
-    .stat {
+    .metric {
       border: 1px solid var(--line);
       border-radius: var(--radius-md);
-      padding: 0.66rem 0.72rem;
       background: #fff;
+      padding: 0.7rem;
     }
 
-    .stat strong {
-      font-size: 1.33rem;
+    .metric strong {
       display: block;
-      line-height: 1;
       color: var(--brand);
-      margin-bottom: 0.14rem;
+      font-size: 1.25rem;
+      line-height: 1;
+      margin-bottom: 0.18rem;
     }
 
-    .stat span {
-      font-size: 0.86rem;
-      color: var(--ink-700);
-    }
-
-    .subgrid {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 1rem;
+    .metric span {
+      color: var(--ink-soft);
+      font-size: 0.83rem;
     }
 
     .section {
-      padding: 1.35rem;
-      animation: rise 780ms ease-out both;
+      padding: 1.2rem;
     }
 
     .section h2 {
-      margin: 0 0 0.36rem;
-      font-family: "Literata", Georgia, serif;
-      font-size: clamp(1.28rem, 2.2vw, 1.85rem);
+      margin: 0;
+      font-family: "Spectral", Georgia, serif;
+      font-size: clamp(1.25rem, 2.4vw, 1.9rem);
       letter-spacing: -0.01em;
     }
 
-    .section .kicker {
-      margin: 0;
-      color: var(--ink-700);
-      font-size: 0.96rem;
+    .sub {
+      margin: 0.3rem 0 0;
+      color: var(--ink-soft);
+      font-size: 0.92rem;
     }
 
-    .pillars {
-      margin-top: 0.92rem;
+    .automations {
+      margin-top: 0.9rem;
       display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 0.72rem;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 0.65rem;
     }
 
-    .pillar {
+    .auto {
       border: 1px solid var(--line);
-      border-radius: var(--radius-lg);
+      border-radius: var(--radius-md);
       background: #fff;
-      padding: 0.88rem;
-      transform: translateY(0);
-      transition: transform 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
+      padding: 0.75rem;
+      animation: reveal 760ms ease both;
     }
 
-    .pillar:hover {
-      transform: translateY(-2px);
-      border-color: rgba(15, 79, 70, 0.3);
-      box-shadow: 0 10px 20px rgba(17, 33, 35, 0.08);
+    .auto:nth-child(2) { animation-delay: 60ms; }
+    .auto:nth-child(3) { animation-delay: 120ms; }
+    .auto:nth-child(4) { animation-delay: 180ms; }
+    .auto:nth-child(5) { animation-delay: 240ms; }
+    .auto:nth-child(6) { animation-delay: 300ms; }
+
+    .icon {
+      width: 30px;
+      height: 30px;
+      border-radius: 10px;
+      border: 1px solid rgba(12, 90, 78, 0.28);
+      background: var(--brand-soft);
+      display: grid;
+      place-items: center;
+      color: var(--brand);
+      margin-bottom: 0.5rem;
     }
 
-    .pillar h3 {
-      margin: 0 0 0.34rem;
-      font-size: 0.99rem;
-      line-height: 1.24;
+    .icon svg {
+      width: 18px;
+      height: 18px;
+      stroke: currentColor;
+      fill: none;
+      stroke-width: 1.9;
+      stroke-linecap: round;
+      stroke-linejoin: round;
     }
 
-    .pillar p {
+    .auto h3 {
       margin: 0;
-      color: var(--ink-700);
-      font-size: 0.9rem;
-      line-height: 1.43;
+      font-size: 0.94rem;
+      line-height: 1.25;
     }
 
-    .model-wrap {
-      margin-top: 0.92rem;
-      border: 1px solid var(--line);
-      border-radius: var(--radius-lg);
-      overflow: auto;
-      background: #fff;
+    .auto p {
+      margin: 0.34rem 0 0;
+      color: var(--ink-soft);
+      font-size: 0.84rem;
+      line-height: 1.36;
     }
 
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      min-width: 700px;
-    }
-
-    th, td {
-      text-align: left;
-      padding: 0.73rem;
-      border-bottom: 1px solid rgba(22, 38, 40, 0.11);
-      vertical-align: top;
-      font-size: 0.9rem;
-    }
-
-    th {
-      color: var(--ink-500);
-      font-size: 0.77rem;
-      text-transform: uppercase;
-      letter-spacing: 0.06em;
-      background: #f8fbfa;
+    .clients {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.9rem;
+      margin-top: 0.9rem;
     }
 
     .list {
-      margin: 0.9rem 0 0;
+      margin: 0;
       padding: 0;
       list-style: none;
       display: grid;
@@ -259,68 +238,34 @@
 
     .list li {
       border: 1px solid var(--line);
+      border-radius: 12px;
+      background: #fff;
+      padding: 0.62rem 0.7rem;
+      font-size: 0.86rem;
+      color: var(--ink-soft);
+    }
+
+    .signal {
+      border: 1px solid rgba(145, 86, 0, 0.28);
       border-radius: var(--radius-md);
-      background: #fff;
-      padding: 0.63rem 0.72rem;
-      font-size: 0.9rem;
-      color: var(--ink-700);
+      background: var(--alert-soft);
+      padding: 0.75rem;
+      color: #6c4308;
+      font-size: 0.88rem;
+      line-height: 1.45;
     }
 
-    .positioning {
-      margin-top: 0.92rem;
-      border: 1px solid rgba(146, 81, 0, 0.22);
-      border-radius: var(--radius-lg);
-      background: var(--signal-soft);
-      padding: 0.88rem;
-      color: #64400d;
-      font-size: 0.92rem;
-      line-height: 1.5;
-    }
-
-    .links {
-      margin-top: 0.92rem;
+    .footer {
       display: flex;
-      flex-wrap: wrap;
-      gap: 0.55rem;
-    }
-
-    .btn {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.35rem;
-      text-decoration: none;
-      color: var(--ink-900);
-      font-size: 0.84rem;
-      font-weight: 600;
-      border: 1px solid var(--line-strong);
-      border-radius: 999px;
-      padding: 0.5rem 0.76rem;
-      background: #fff;
-      transition: border-color 140ms ease, background-color 140ms ease, transform 140ms ease;
-    }
-
-    .btn:hover {
-      transform: translateY(-1px);
-      border-color: rgba(15, 79, 70, 0.44);
-      background: #f2fcf9;
-    }
-
-    .brand {
-      margin-top: 0.45rem;
-      display: flex;
-      align-items: center;
       justify-content: space-between;
-      gap: 1rem;
-      color: var(--ink-500);
-      font-size: 0.82rem;
+      gap: 0.8rem;
+      flex-wrap: wrap;
+      margin-top: 0.8rem;
+      font-size: 0.8rem;
+      color: var(--ink-soft);
     }
 
-    .brand strong {
-      color: var(--ink-900);
-      font-weight: 700;
-    }
-
-    @keyframes rise {
+    @keyframes reveal {
       from {
         opacity: 0;
         transform: translateY(10px);
@@ -331,24 +276,23 @@
       }
     }
 
-    @media (max-width: 950px) {
+    @media (max-width: 920px) {
       .hero {
         grid-template-columns: 1fr;
       }
 
-      .subgrid {
-        grid-template-columns: 1fr;
+      .automations {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
       }
 
-      .pillars {
+      .clients {
         grid-template-columns: 1fr;
       }
     }
 
     @media (max-width: 620px) {
       main {
-        width: min(1140px, calc(100% - 1rem));
-        margin-top: 0.95rem;
+        width: min(1080px, calc(100% - 1rem));
       }
 
       .hero,
@@ -356,139 +300,113 @@
         padding: 1rem;
       }
 
+      .automations {
+        grid-template-columns: 1fr;
+      }
+
       h1 {
-        font-size: clamp(1.68rem, 9vw, 2.16rem);
-      }
-
-      .hero p {
-        font-size: 0.95rem;
-      }
-
-      .brand {
-        flex-direction: column;
-        align-items: flex-start;
+        font-size: clamp(1.7rem, 9vw, 2.2rem);
       }
     }
   </style>
 </head>
 <body>
-  <div class="noise" aria-hidden="true"></div>
   <main>
-    <section class="panel hero">
+    <section class="card hero">
       <div>
-        <div class="badge">Legal AI market timing</div>
-        <h1>From AI adoption to institutional advantage for law firms.</h1>
+        <div class="tag">AI Legal Automation Platform</div>
+        <h1>Simple legal workflows. Faster client outcomes.</h1>
         <p>
-          LegalMemory.com is positioned as the SaaS identity for the Legal Memory and Document Intelligence Platform: a system that combines case memory, compliance archives, litigation intelligence, and institutional knowledge in one buyer-ready offer.
+          LegalMemory.com positions your product as a clean SaaS platform for AI legal automations, case memory, and compliance-grade client delivery.
         </p>
-      </div>
-      <aside class="signal-card">
-        <p class="signal-title">VALE feasibility signal (2025-2026)</p>
-        <div class="stats">
-          <article class="stat">
-            <strong>78%</strong>
-            <span>law firms already use at least one AI tool</span>
-          </article>
-          <article class="stat">
-            <strong>52%</strong>
-            <span>report measurable ROI within 12 months</span>
-          </article>
-          <article class="stat">
-            <strong>68%</strong>
-            <span>plan to increase AI spending</span>
-          </article>
-          <article class="stat">
-            <strong>12%</strong>
-            <span>have a true institutional memory system</span>
-          </article>
+        <div class="actions">
+          <a class="btn" href="https://github.com/AgentFamily/legal-memory" target="_blank" rel="noreferrer">GitHub</a>
+          <a class="btn" href="https://github.com/AgentFamily/legal-memory/blob/main/POSITIONING_STATEMENT.md" target="_blank" rel="noreferrer">Positioning</a>
+          <a class="btn" href="https://github.com/AgentFamily/legal-memory/blob/main/docs/research/VALE_findings.md" target="_blank" rel="noreferrer">VALE Data</a>
         </div>
+      </div>
+      <aside class="metrics">
+        <article class="metric">
+          <strong>78%</strong>
+          <span>Legal AI adoption in law firms</span>
+        </article>
+        <article class="metric">
+          <strong>52%</strong>
+          <span>See ROI within 12 months</span>
+        </article>
+        <article class="metric">
+          <strong>12%</strong>
+          <span>Have institutional memory systems</span>
+        </article>
       </aside>
     </section>
 
-    <div class="subgrid">
-      <section class="panel section">
-        <h2>Product architecture buyers can evaluate quickly</h2>
-        <p class="kicker">Four integrated capabilities define the platform and make the SaaS case clear.</p>
-        <div class="pillars">
-          <article class="pillar">
-            <h3>AI case memory system for law firms</h3>
-            <p>Transforms past matters, motions, and outcomes into a searchable strategy memory graph.</p>
-          </article>
-          <article class="pillar">
-            <h3>Legal document recall plus compliance archive</h3>
-            <p>Creates a retrieval-native archive for contracts, discovery files, and policy history with audit traceability.</p>
-          </article>
-          <article class="pillar">
-            <h3>Litigation intelligence layer</h3>
-            <p>Surfaces opponent patterns, judge tendencies, and argument depth signals for faster planning.</p>
-          </article>
-          <article class="pillar">
-            <h3>AI-powered institutional knowledge engine</h3>
-            <p>Captures partner expertise and practice knowledge into reusable playbooks for cross-office teams.</p>
-          </article>
-        </div>
-      </section>
+    <section class="card section">
+      <h2>AI automations for legal clients</h2>
+      <p class="sub">Focused, practical modules legal buyers can adopt fast.</p>
+      <div class="automations">
+        <article class="auto">
+          <div class="icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h10"/><path d="M17 17l2 2 4-4"/></svg>
+          </div>
+          <h3>Matter Intake Triage</h3>
+          <p>Auto-categorize new matters and route them to the right legal team.</p>
+        </article>
+        <article class="auto">
+          <div class="icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M8 3h8l5 5v13H3V3z"/><path d="M8 3v5h5"/><path d="M8 13h8M8 17h6"/></svg>
+          </div>
+          <h3>Contract Risk Extraction</h3>
+          <p>Flag risky clauses, obligations, and missing language in seconds.</p>
+        </article>
+        <article class="auto">
+          <div class="icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M4 20h16"/><path d="M7 16l3-8 3 5 2-3 2 6"/></svg>
+          </div>
+          <h3>Litigation Intelligence</h3>
+          <p>Track judges, opposing counsel trends, and argument performance.</p>
+        </article>
+        <article class="auto">
+          <div class="icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M12 3v18M5 8h14M7 21h10"/></svg>
+          </div>
+          <h3>Compliance Archive Automation</h3>
+          <p>Maintain audit-ready archives with policy and document traceability.</p>
+        </article>
+        <article class="auto">
+          <div class="icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M4 6h16v12H4z"/><path d="M8 10h8M8 14h5"/></svg>
+          </div>
+          <h3>Case Memory Recall</h3>
+          <p>Retrieve relevant prior motions, precedents, and internal playbooks.</p>
+        </article>
+        <article class="auto">
+          <div class="icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M3 12h18"/><path d="M12 3v18"/><path d="M7 7l10 10"/></svg>
+          </div>
+          <h3>Client Update Copilot</h3>
+          <p>Generate clear status updates and action summaries for clients.</p>
+        </article>
+      </div>
+    </section>
 
-      <section class="panel section">
-        <h2>SaaS commercialization model</h2>
-        <p class="kicker">Recurring subscription core with expansion modules and defensible retention.</p>
-        <div class="model-wrap">
-          <table>
-            <thead>
-              <tr>
-                <th>Tier</th>
-                <th>Target</th>
-                <th>Core value delivered</th>
-                <th>Monthly pricing</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Starter</td>
-                <td>Small firms</td>
-                <td>Foundational recall and archive workflows</td>
-                <td>$2K-$5K</td>
-              </tr>
-              <tr>
-                <td>Professional</td>
-                <td>Mid-market firms</td>
-                <td>Recall, compliance automation, and litigation intelligence</td>
-                <td>$8K-$15K</td>
-              </tr>
-              <tr>
-                <td>Enterprise</td>
-                <td>Large firms</td>
-                <td>Governance controls, integrations, and API access</td>
-                <td>$25K-$50K</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-
+    <section class="card section">
+      <h2>What legal buyers get</h2>
+      <p class="sub">Less manual work, stronger delivery, better consistency.</p>
+      <div class="clients">
         <ul class="list">
-          <li>Expansion levers: compliance modules, practice-area intelligence packs, workflow automation services.</li>
-          <li>Buyer outcomes: faster case prep, lower institutional knowledge loss, reduced audit friction.</li>
-          <li>Retention moat: firm-specific legal memory compounds over time and is hard to replace.</li>
+          <li>Faster turnaround on legal requests</li>
+          <li>Predictable quality across teams</li>
+          <li>Lower onboarding time for associates</li>
+          <li>Higher margin on fixed-fee matters</li>
         </ul>
-      </section>
-    </div>
-
-    <section class="panel section">
-      <h2>Category positioning statement</h2>
-      <p class="kicker">LegalMemory.com communicates legal, memory, and AI in one premium domain asset.</p>
-      <div class="positioning">
-        LegalMemory.com is the premium domain and SaaS identity for legal organizations moving from basic AI usage to institutional, compliance-ready, litigation-grade knowledge automation.
+        <div class="signal">
+          With legal AI adoption already high, the next spend category is automation infrastructure. LegalMemory.com positions the platform directly in that budget line.
+        </div>
       </div>
-      <div class="links">
-        <a class="btn" href="https://github.com/AgentFamily/legal-memory" target="_blank" rel="noreferrer">GitHub repository</a>
-        <a class="btn" href="https://github.com/AgentFamily/legal-memory/blob/main/POSITIONING_STATEMENT.md" target="_blank" rel="noreferrer">One-page positioning</a>
-        <a class="btn" href="https://github.com/AgentFamily/legal-memory/blob/main/docs/research/VALE_findings.md" target="_blank" rel="noreferrer">VALE findings</a>
-        <a class="btn" href="https://github.com/AgentFamily/legal-memory/blob/main/docs/research/legal_ai_adoption_trends.md" target="_blank" rel="noreferrer">AI adoption trends</a>
-        <a class="btn" href="https://github.com/AgentFamily/legal-memory/blob/main/docs/compliance/regulatory_framework.md" target="_blank" rel="noreferrer">Regulatory framework</a>
-      </div>
-      <div class="brand">
-        <span><strong>LegalMemory.com</strong> | AI legal memory and document intelligence platform</span>
-        <span>Built for deployment on Vercel static hosting</span>
+      <div class="footer">
+        <span>LegalMemory.com | Premium AI Legal Automation Domain</span>
+        <span>Built for Vercel static deployment</span>
       </div>
     </section>
   </main>
