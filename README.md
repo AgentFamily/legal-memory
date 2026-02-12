@@ -5,6 +5,13 @@ Premium SaaS positioning for law firms that need institutional knowledge automat
 Repository: `https://github.com/AgentFamily/legal-memory`  
 Status: MVP definition and go-to-market preparation (Q1 2026 target)
 
+## Deployment
+
+- Platform: Vercel static hosting
+- Root directory: repository root
+- Build command: none
+- Output: `index.html` served via `vercel.json` rewrite fallback
+
 ## Executive Snapshot
 
 LegalMemory.com is positioned as a category-defining legal AI platform, not a branding-only domain. It is the commercial identity for a product that converts fragmented legal documents and internal know-how into searchable, auditable, and revenue-impacting intelligence.
