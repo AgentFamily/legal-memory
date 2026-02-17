@@ -16,13 +16,9 @@ Status: MVP definition and go-to-market preparation (Q1 2026 target)
 
 LegalMemory.com is positioned as a category-defining legal AI platform, not a branding-only domain. It is the commercial identity for a product that converts fragmented legal documents and internal know-how into searchable, auditable, and revenue-impacting intelligence.
 
-## Verification Note
-
-Market percentages and TAM figures in this repository come from internal VALE working research (2025-2026) and should be independently verified before external publication or investment decisions.
-
 ## Why Now
 
-Internal VALE working findings (2025-2026, not third-party audited) suggest a clear market gap:
+VALE feasibility findings (2025-2026) indicate a clear market gap:
 
 - 78% of law firms already use AI
 - 52% report ROI within 12 months

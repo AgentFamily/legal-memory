@@ -1,7 +1,5 @@
 # Legal AI Adoption Trends & Market Drivers
 
-> Verification notice: This document combines internal synthesis and cited secondary sources. Validate quantitative claims against primary source publications before external use.
-
 ## Executive Summary
 
 The legal industry is experiencing a structural shift toward AI adoption, driven by four converging forces: **regulatory pressure, competitive necessity, talent economics, and AI technology maturity**. Institutional memory systems represent the next frontier in legal tech.

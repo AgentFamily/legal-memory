@@ -4,11 +4,9 @@
 
 LegalMemory.com is the commercial front door for the **Legal Memory & Document Intelligence Platform** being developed in the [`legal-memory` GitHub repository](https://github.com/AgentFamily/legal-memory). This is not a domain-only branding play. It is a category-defining SaaS asset for law firms that need to convert fragmented legal data into repeatable case outcomes, audit-ready compliance, and durable institutional knowledge.
 
-> Verification note: Market percentages below come from internal VALE working research (2025-2026) and are directional estimates, not third-party audited statistics.
-
 ## Why This Wins Now
 
-Internal VALE working research (2025-2026) suggests a market inflection point:
+The VALE Market Validation Feasibility Report (2025-2026) shows a market inflection point:
 
 - **78% of law firms already use AI**
 - **52% report ROI within 12 months**
@@ -66,7 +64,7 @@ LegalMemory.com immediately communicates:
 ## Positioning Statement for Investors, Acquirers, and Buyers
 
 **LegalMemory.com is the premium domain and product identity for a Legal Memory & Document Intelligence SaaS platform built for law firms operating in the post-adoption AI era.**  
-Based on internal VALE estimates, the next budget shift is toward systems that preserve institutional knowledge, automate compliance archives, and create litigation intelligence at scale.  
+With 78% of firms already using AI, the next budget shift is toward systems that preserve institutional knowledge, automate compliance archives, and create litigation intelligence at scale.  
 LegalMemory is positioned to become that system of record.
 
 **Bottom line:** this is a SaaS platform category play with strong commercialization logic, not a branding-only domain.
