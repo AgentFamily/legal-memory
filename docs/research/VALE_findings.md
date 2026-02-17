@@ -1,5 +1,7 @@
 # VALE Market Validation Report Findings
 
+> Verification notice: This document captures internal research notes and directional estimates. Figures should be independently validated before external use.
+
 ## Legal AI Adoption Surge: 78% Adoption Rate
 
 ### Key Insights from VALE Feasibility Study
@@ -78,4 +80,4 @@ Based on VALE interviews with 200+ legal decision-makers:
 
 The legal industry is primed for **institutional memory systems** not just point solutions. The firm that delivers integrated case memory + compliance + litigation intelligence *first* captures 40–60% market share in this emerging category.
 
-**Source:** VALE Market Validation Feasibility Report, 2025–2026
+**Source:** Internal VALE Market Validation working report, 2025–2026
